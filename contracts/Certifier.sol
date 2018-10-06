@@ -48,5 +48,15 @@ contract Certifier {
         return(course.name, course.cost, course.duration, course.threshold, course.codes);
     }
 
-    //TODO: Student must enrolle
+    function subscribe(bytes32 _code, string _firstName, string _lastName, uint _age, string _email) public payable {
+        require(msg.value == 3 ether, "You have payed 3 ether");
+        Course storage course = courses[_code];
+        course.students[msg.sender] = Student({
+            firstName: _firstName,
+            lastName: _lastName,
+            age: _age,
+            email: _email,
+            codes: new bytes32[](0)
+        });
+    }
 }
