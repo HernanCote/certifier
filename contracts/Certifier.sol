@@ -33,6 +33,10 @@ contract Certifier {
         _;
     }
 
+    function isOwner() public view returns(bool) {
+        return msg.sender == owner;
+    }
+
     function addCourse(bytes32 _code,  string _name,  uint _cost,  uint _duration, uint _threshold, bytes32[] _codes) public restricted {
         courses[_code] = Course({
             name: _name,
