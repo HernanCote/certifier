@@ -4833,14 +4833,8 @@
       "links": {},
       "address": "0x574b09cdf428f22a6aeac652f5102d2486d70ed8",
       "transactionHash": "0x9f0383d518af1bafbcc22b7e0308babe4308f722ead94b98e9e26ea571950e5c"
-    },
-    "1539443237791": {
-      "events": {},
-      "links": {},
-      "address": "0x964461ad0b91c114cf3ae8f72d001f87926a9208",
-      "transactionHash": "0xd2ffcc9e691693ca7a70ee1b82966107513e5da60e6a20c5943774f25a8d3157"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-10-13T15:10:21.528Z"
+  "updatedAt": "2018-10-13T14:13:50.809Z"
 }

@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import index from "./store/index";
+import store from "./store";
 import Web3 from "web3";
 
 Vue.config.productionTip = false;
@@ -16,6 +16,6 @@ window.addEventListener("load", () => {
 
 new Vue({
   router,
-  index,
+  store,
   render: h => h(App)
 }).$mount("#app");
